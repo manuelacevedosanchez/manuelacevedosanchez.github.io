@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+    height: 100%;
+    background: #f0f0f0;
+}
+
+header .hero {
+    height: 20vh;  /* Cambiado de 100vh a 40vh para reducir la altura */
+    background: url('images/hero.jpg') no-repeat center center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.hover-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.hover-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta según tus necesidades */
+    gap: 20px; /* Espacio entre elementos de la cuadrícula */
+    padding: 20px; /* Espacio alrededor de la cuadrícula */
+    justify-content: center; /* Centra los elementos de la cuadrícula horizontalmente */
+    align-items: center; /* Alinea los elementos en el centro verticalmente */
+}
+
+.card {
+    background-size: cover; /* Asegura que el fondo cubre el área, pero puede cortar partes */
+    width: 300px; /* Ancho fijo para las tarjetas */
+    height: 600px; /* Altura específica para la proporción vertical */
+    border-radius: 8px;
+    margin: 0 auto; /* Añade esto para centrar las tarjetas dentro de sus celdas del grid */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center; /* Centra el contenido dentro de la tarjeta */
+    padding: 10px;
+    color: white;
+    font-size: 1.2em;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(0,0,0,0.2);
+}
+
+.card span {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 0;
+}
+
+.links-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 10px;  /* Aumentar el padding vertical */
+    background: #222;
+    color: white;
+    position: relative;  /* Cambia de fixed a relative si es adecuado */
+    bottom: 0;
+    width: 100%;
+}
+
+/* Añadir un margen adicional al final de la sección principal */
+main {
+    padding-bottom: 100px;  /* Esto crea espacio extra al final de la página */
+}

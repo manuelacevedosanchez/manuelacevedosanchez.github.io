@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta viewport="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Manuel Acevedo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <h1>Bienvenido a mi Portafolio</h1>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="profile-section" data-aos="fade-right">
+            <img src="images/profile.jpg" alt="Manuel Acevedo" class="hover-image">
+            <div>
+                <h2>Sobre Mí</h2>
+                <p>Apasionado desarrollador de software con una sólida formación en tecnologías web y móviles.</p>
+            </div>
+        </section>
+
+        <section id="projects" data-aos="fade-up">
+            <h2>Mis Proyectos</h2>
+            <div class="grid-container">
+                <div class="card" style="background-image: url('images/project1.jpg');" onclick="openLink('https://link-a-tu-app1.com')">
+                    <span>App 1 - Sistema de Gestión</span>
+                </div>
+                <div class="card" style="background-image: url('images/project2.jpg');" onclick="openLink('https://link-a-tu-app2.com')">
+                    <span>App 2 - Juego Móvil</span>
+                </div>
+                <div class="card" style="background-image: url('images/project2.jpg');" onclick="openLink('https://link-a-tu-app2.com')">
+                    <span>App 2 - Juego Móvil</span>
+                </div>
+                <div class="card" style="background-image: url('images/project2.jpg');" onclick="openLink('https://link-a-tu-app2.com')">
+                    <span>App 2 - Juego Móvil</span>
+                </div>
+                <div class="card" style="background-image: url('images/project2.jpg');" onclick="openLink('https://link-a-tu-app2.com')">
+                    <span>App 2 - Juego Móvil</span>
+                </div>
+                <div class="card" style="background-image: url('images/project2.jpg');" onclick="openLink('https://link-a-tu-app2.com')">
+                    <span>App 2 - Juego Móvil</span>
+                </div>
+                <div class="card" style="background-image: url('images/project2.jpg');" onclick="openLink('https://link-a-tu-app2.com')">
+                    <span>App 2 - Juego Móvil</span>
+                </div>
+                <div class="card" style="background-image: url('images/project2.jpg');" onclick="openLink('https://link-a-tu-app2.com')">
+                    <span>App 2 - Juego Móvil</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="links" class="links-section" data-aos="fade-left">
+            <h2>Enlaces Recomendados</h2>
+            <div class="links-grid">
+                <a href="https://ejemplo1.com" target="_blank" class="link">
+                    <img src="images/link1.jpg" alt="Recurso 1">
+                    <p>Últimas Tendencias en IA</p>
+                </a>
+                <a href="https://ejemplo2.com" target="_blank" class="link">
+                    <img src="images/link2.jpg" alt="Recurso 2">
+                    <p>Mejores Prácticas en Seguridad Informática</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Manuel Acevedo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
