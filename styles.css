@@ -1,119 +1,104 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body, html {
-    font-family: 'Arial', sans-serif;
-    width: 100%;
-    height: 100%;
-    background: #f0f0f0;
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #222;
 }
 
-header .hero {
-    height: 20vh;  /* Cambiado de 100vh a 40vh para reducir la altura */
-    background: url('images/hero.jpg') no-repeat center center / cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.container {
+    width: min(1000px, 92%);
+    margin: 0 auto;
 }
 
-main {
-    padding: 20px;
-}
-
-.profile-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    background: white;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-.hover-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    transition: all 0.3s ease;
-}
-
-.hover-image:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(0,0,0,0.2);
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta según tus necesidades */
-    gap: 20px; /* Espacio entre elementos de la cuadrícula */
-    padding: 20px; /* Espacio alrededor de la cuadrícula */
-    justify-content: center; /* Centra los elementos de la cuadrícula horizontalmente */
-    align-items: center; /* Alinea los elementos en el centro verticalmente */
-}
-
-.card {
-    background-size: cover; /* Asegura que el fondo cubre el área, pero puede cortar partes */
-    width: 300px; /* Ancho fijo para las tarjetas */
-    height: 600px; /* Altura específica para la proporción vertical */
-    border-radius: 8px;
-    margin: 0 auto; /* Añade esto para centrar las tarjetas dentro de sus celdas del grid */
-    display: flex;
-    align-items: flex-end;
-    justify-content: center; /* Centra el contenido dentro de la tarjeta */
-    padding: 10px;
+.site-header {
+    background-color: #1f2937;
     color: white;
-    font-size: 1.2em;
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
-    position: relative;
-    overflow: hidden;
+    padding: 48px 0 32px;
 }
 
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 40px rgba(0,0,0,0.2);
+.site-header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
 }
 
-.card span {
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 5px 0;
+.subtitle {
+    font-size: 1.05rem;
+    opacity: 0.9;
+    margin-bottom: 20px;
 }
 
-.links-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding: 20px;
-}
-
-.link {
+.main-nav {
     display: flex;
-    align-items: center;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.main-nav a {
+    color: white;
     text-decoration: none;
-    color: black;
+    font-weight: bold;
 }
 
-footer {
-    text-align: center;
-    padding: 20px 10px;  /* Aumentar el padding vertical */
-    background: #222;
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    padding: 48px 0;
+}
+
+.alt-section {
+    background-color: #ffffff;
+}
+
+.section h2 {
+    margin-bottom: 16px;
+    font-size: 1.8rem;
+}
+
+.section p {
+    margin-bottom: 14px;
+}
+
+.project-card {
+    background: #f0f4f8;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 18px;
+    border: 1px solid #d9e2ec;
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 12px;
+}
+
+.project-links a {
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-links a:hover {
+    text-decoration: underline;
+}
+
+.site-footer {
+    background-color: #111827;
     color: white;
-    position: relative;  /* Cambia de fixed a relative si es adecuado */
-    bottom: 0;
-    width: 100%;
-}
-
-/* Añadir un margen adicional al final de la sección principal */
-main {
-    padding-bottom: 100px;  /* Esto crea espacio extra al final de la página */
+    text-align: center;
+    padding: 24px 0;
+    margin-top: 20px;
 }
