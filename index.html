@@ -2,77 +2,78 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta viewport="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Manuel Acevedo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manuel Acevedo | Desarrollador de aplicaciones</title>
+    <meta name="description" content="Web oficial de Manuel Acevedo, desarrollador de aplicaciones móviles y proyectos de software.">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="hero">
-            <h1>Bienvenido a mi Portafolio</h1>
+    <header class="site-header">
+        <div class="container">
+            <h1>Manuel Acevedo</h1>
+            <p class="subtitle">Desarrollador de aplicaciones móviles y proyectos de software</p>
+            <nav class="main-nav">
+                <a href="#about">Sobre mí</a>
+                <a href="#projects">Proyectos</a>
+                <a href="privacy.html">Privacidad</a>
+                <a href="support.html">Soporte</a>
+            </nav>
         </div>
     </header>
 
     <main>
-        <section id="about" class="profile-section" data-aos="fade-right">
-            <img src="images/profile.jpg" alt="Manuel Acevedo" class="hover-image">
-            <div>
-                <h2>Sobre Mí</h2>
-                <p>Apasionado desarrollador de software con una sólida formación en tecnologías web y móviles.</p>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>Sobre mí</h2>
+                <p>
+                    Soy Manuel Acevedo, desarrollador de software especializado en aplicaciones móviles.
+                    En esta web iré recopilando mis proyectos, información de soporte y documentación
+                    relacionada con las aplicaciones que publique.
+                </p>
             </div>
         </section>
 
-        <section id="projects" data-aos="fade-up">
-            <h2>Mis Proyectos</h2>
-            <div class="grid-container">
-                <div class="card" style="background-image: url('images/project1.jpg');" onclick="openLink('https://link-a-tu-app1.com')">
-                    <span>App 1 - Sistema de Gestión</span>
+        <section id="projects" class="section alt-section">
+            <div class="container">
+                <h2>Proyectos</h2>
+
+                <div class="project-card">
+                    <h3>SospechApp</h3>
+                    <p>
+                        Juego social de deducción y roles ocultos pensado para jugar en grupo.
+                    </p>
+                    <p class="project-links">
+                        <a href="privacy.html">Política de privacidad</a>
+                        <a href="support.html">Soporte</a>
+                    </p>
                 </div>
-                <div class="card" style="background-image: url('images/project2.jpg');" onclick="openLink('https://link-a-tu-app2.com')">
-                    <span>App 2 - Juego Móvil</span>
-                </div>
-                <div class="card" style="background-image: url('images/project2.jpg');" onclick="openLink('https://link-a-tu-app2.com')">
-                    <span>App 2 - Juego Móvil</span>
-                </div>
-                <div class="card" style="background-image: url('images/project2.jpg');" onclick="openLink('https://link-a-tu-app2.com')">
-                    <span>App 2 - Juego Móvil</span>
-                </div>
-                <div class="card" style="background-image: url('images/project2.jpg');" onclick="openLink('https://link-a-tu-app2.com')">
-                    <span>App 2 - Juego Móvil</span>
-                </div>
-                <div class="card" style="background-image: url('images/project2.jpg');" onclick="openLink('https://link-a-tu-app2.com')">
-                    <span>App 2 - Juego Móvil</span>
-                </div>
-                <div class="card" style="background-image: url('images/project2.jpg');" onclick="openLink('https://link-a-tu-app2.com')">
-                    <span>App 2 - Juego Móvil</span>
-                </div>
-                <div class="card" style="background-image: url('images/project2.jpg');" onclick="openLink('https://link-a-tu-app2.com')">
-                    <span>App 2 - Juego Móvil</span>
+
+                <div class="project-card">
+                    <h3>Más proyectos próximamente</h3>
+                    <p>
+                        Esta sección se irá ampliando con nuevas aplicaciones y páginas específicas de cada proyecto.
+                    </p>
                 </div>
             </div>
         </section>
 
-        <section id="links" class="links-section" data-aos="fade-left">
-            <h2>Enlaces Recomendados</h2>
-            <div class="links-grid">
-                <a href="https://ejemplo1.com" target="_blank" class="link">
-                    <img src="images/link1.jpg" alt="Recurso 1">
-                    <p>Últimas Tendencias en IA</p>
-                </a>
-                <a href="https://ejemplo2.com" target="_blank" class="link">
-                    <img src="images/link2.jpg" alt="Recurso 2">
-                    <p>Mejores Prácticas en Seguridad Informática</p>
-                </a>
+        <section class="section">
+            <div class="container">
+                <h2>Contacto</h2>
+                <p>
+                    Para soporte o consultas relacionadas con mis aplicaciones, puedes escribirme a:
+                </p>
+                <p>
+                    <a href="mailto:TU_CORREO_AQUI">TU_CORREO_AQUI</a>
+                </p>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>© 2024 Manuel Acevedo. Todos los derechos reservados.</p>
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 Manuel Acevedo. Todos los derechos reservados.</p>
+        </div>
     </footer>
 </body>
 </html>
